@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Registration Form</title>
+
+    <!-- Icons font CSS-->
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    
+
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+
+    <header class="">
+        <nav class="navbar navbar-expand-lg" style="height: 18vh;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="display: flex; margin: 2vh;
+                margin-left: 5vh;">
+                    <h2 style="color: black; font-weight: 500;">HEALTH</h2> <h2 style="color: #163d64;">EQUATE</h2>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <br><br><br>
+
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Assessment Form</h2>
+                    <form id="registrationForm">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Name</label>
+                                    <input class="input--style-4" type="text" name="name" id="name">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Occupation</label>
+                                    <input class="input--style-4" type="text" name="Occupation" id="occupation">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Age</label>
+                                    <input class="input--style-4" type="text" name="age" id="age">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Mobile number</label>
+                                    <input class="input--style-4" type="text" name="mobile_number" id="mobile">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Gender</label>
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject" id="gender">
+                                            <option disabled="disabled" selected="selected">Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Email</label>
+                                    <input class="input--style-4" type="text" name="email" id="email" required>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+
+                        <div>
+                            <h3>Rehab Information</h3>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group">
+                                <label class="label">Chief Complaint/Aliment/Injury</label>
+                                <input class="input--style-4" type="text" id="chief-complaint">
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Date of Injury</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4 js-datepicker" type="text" name="date_of_injury" id="date-of-injury">
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Date of Surgery</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4 js-datepicker" type="text" name="date_of_surgery" id="date-of-surgery">
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group">
+                                <label class="label">Briefly describe how you were injured</label>
+                                <input class="input--style-4" type="text" id="desc-injury">
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Have you ever received threapy for this conditoins</label>
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject" id="history-of-threapy">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Has your condition been getting</label>
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject" id="condition-after-threapy">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Worse</option>
+                                            <option>Same</option>
+                                            <option>Better</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="label">How are your symptoms</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="subject" id="present-symptoms">
+                                    <option disabled="disabled" selected="selected">Choose option</option>
+                                    <option>Constant</option>
+                                    <option>Intermittent</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+
+
+                    <div class="row row-space">
+                        <label class="label">Mark the number that best corresponds to your pain</label>
+                        <div class="col-2">
+                            <div class="input-group">
+                                <label class="label">At Best</label>
+                                <div class="rs-select2 js-select-simple select--no-search">
+                                    <select name="subject" id="number-best-corresponds-to-pain-best">
+                                        <option disabled="disabled" selected="selected">Choose option</option>
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10 (EXCRUVIATING PAIN)</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="input-group">
+                                <label class="label">At Worse</label>
+                                <div class="rs-select2 js-select-simple select--no-search">
+                                    <select name="subject" id="number-best-corresponds-to-pain-worse">
+                                        <option disabled="disabled" selected="selected">Choose option</option>
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10 (EXCRUVIATING PAIN)</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label class="label">What decreases makes your condition Better (mark all that apply)</label>
+                        <div class="rs-select2 js-select-simple select--no-search">
+                            <select name="subject" multiple="multiple" id="desc-makes-condition-better">
+                                <option>Bending</option>
+                                <option>Movement</option>
+                                <option>Rest</option>
+                                <option>Better in AM</option>
+                                <option>Sitting</option>
+                                <option>Standing</option>
+                                <option>Heat</option>
+                                <option>Better as day Progress</option>
+                                <option>Rising</option>
+                                <option>Ice</option>
+                                <option>Better in PM</option>
+                                <option>Changing positions</option>
+                                <option>Lying</option>
+                                <option>Medication</option>
+                                <option>N/A cast just removed</option>
+                            </select>
+                            <div class="select-dropdown"></div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="label">What increases makes your condition Worse (mark all that apply)</label>
+                        <div class="rs-select2 js-select-simple select--no-search">
+                            <select name="subject" multiple="multiple" id="desc-makes-condition-worse">
+                                <option>Bending</option>
+                                <option>Movement</option>
+                                <option>Rest</option>
+                                <option>Better in AM</option>
+                                <option>Sitting</option>
+                                <option>Standing</option>
+                                <option>Heat</option>
+                                <option>Better as day Progress</option>
+                                <option>Rising</option>
+                                <option>Ice</option>
+                                <option>Better in PM</option>
+                                <option>Changing positions</option>
+                                <option>Lying</option>
+                                <option>Medication</option>
+                                <option>N/A cast just removed</option>
+                            </select>
+                            <div class="select-dropdown"></div>
+                        </div>
+                    </div>
+
+
+                        <div class="input-group">
+                            <label class="label">Previous Medical Intervention (mark all that apply)</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="subject" id="prev-medical-intervention" multiple="multiple">
+                                    <option>X-Ray MRI</option>
+                                    <option>Catscan</option>
+                                    <option>Injections</option>
+                                    <option>Other</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group">
+                                <label class="label">What are your goals by end of Threapy</label>
+                                <input class="input--style-4" type="text" name="goals-to-achieve" id="goals-at-end-of-threapy">
+                            </div>
+                        </div>
+
+
+                        <div class="input-group">
+                            <label class="label">MEDICAL INFORMATION (MARK ALL THAT APPLY) **THIS INFORMATION IS CONFIDENTIAL AND REMAINS PART OF YOUR CHART</label>
+                            <div class="rs-select2 js-select-simple select--no-search" >
+                                <select name="subject" multiple="multiple" id="medical-information-secure">
+                                    <option>Choose option</option>
+                                    <option>DIFFICULTY SWALLOWING</option>
+                                    <option>MOTION SICKNESS</option>
+                                    <option>STROKE</option>
+                                    <option>ARTHRITIS</option>
+                                    <option>FEVER/CHILLS/SWEATS</option>
+                                    <option>OSTEOPOROSIS</option>
+                                    <option>HIGH BLOOD PRESSURE</option>
+                                    <option>UNEXPLAINED WEIGHT LOSS</option>
+                                    <option>ANEMIA</option>
+                                    <option>HEART TROUBLE</option>
+                                    <option>BLOOD CLOTS</option>
+                                    <option>BLEEDING PROBLEMS</option>
+                                    <option>PACEMAKER</option>
+                                    <option>SHORTNESS OF BREATH</option>
+                                    <option>HIV/HEPATITIS</option>
+                                    <option>EPILEPSY/SEIZURES</option>
+                                    <option>HISTORY OF SMOKING</option>
+                                    <option>HISTORY OF ALCOHOL ABUSE</option>
+                                    <option>HISTORY OF DRUG ABUSE</option>
+                                    <option>DEPRESSION/ANXIETY</option>
+                                    <option>MYOFASCIAL PAIN</option>
+                                    <option>FIBROMYALGIA</option>
+                                    <option>PREGNANCY</option>
+                                    <option>CANCER</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group">
+                                <label class="label">Previous Surgeries</label>
+                                <input class="input--style-4" type="text" name="goals-to-achieve" id="prev-surgeries">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group">
+                                <label class="label">Others</label>
+                                <input class="input--style-4" type="text" name="goals-to-achieve" id="other">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group">
+                                <label class="label">Medications</label>
+                                <input class="input--style-4" type="text" name="goals-to-achieve" id="medication">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group">
+                                <label class="label">Allergies</label>
+                                <input class="input--style-4" type="text" name="goals-to-achieve" id="allergies">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group">
+                                <h6>By submiting your Regsitraion you accept you <a href="TermsAndConditions.html">term's & conditions</a>
+                                and along with <a href="PrivacyPolicy.html">Privacy Policy</a>
+                                 also accept <a href="RefundPolicy.html">Refund Policy</a> too.</h6>
+                            </div>
+                        </div>
+
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -8,8 +8,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <title>Sixteen Clothing - Contact Page</title>
+    
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,95 +45,55 @@ https://templatemo.com/tm-546-sixteen-clothing
     <!-- Header -->
     <header class="">
       <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>Health<em>Equate</em></h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">  
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
+          <div class="container">
+              <a class="navbar-brand" href="index.html" style="z-index: 200;">
+                  <h2>Health<em>Equate</em></h2>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                  aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon" style="position: absolute;
+                  right: 2vh;
+                  top: 1vh;"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto" style="opacity: 0.8;">
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="gallery.html">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Registration.html">Regsitraion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
           </div>
-        </div>
       </nav>
-    </header>
+  </header>
 
-    <!-- Page Content -->
-    <div class="page-heading contact-heading header-text">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="text-content">
-              <h4>contact us</h4>
-              <h2>let’s get in touch</h2>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="services-contact" style="height: 100vh; text-align: right;">
     </div>
-
-
-    <div class="find-us">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Our Location on Maps</h2>
-            </div>
-          </div>
-          <div class="col-md-8">
-<!-- How to change your own map point
-	1. Go to Google Maps
-	2. Click on your location point
-	3. Click "Share" and choose "Embed map" tab
-	4. Copy only URL and paste it within the src="" field below
--->
-            <div id="map">
-              <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="330px" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="left-content">
-              <h4>About our office</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.<br><br>Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti.</p>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     
     <div class="send-message">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Send us a Message</h2>
+              <h2>Register to Contact Us</h2>
             </div>
           </div>
           <div class="col-md-8">
             <div class="contact-form">
-              <form id="contact" action="" method="post">
+              <form id="contactus">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
@@ -143,19 +105,15 @@ https://templatemo.com/tm-546-sixteen-clothing
                       <input name="email" type="text" class="form-control" id="email" placeholder="E-Mail Address" required="">
                     </fieldset>
                   </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
-                    </fieldset>
-                  </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                      <textarea name="purpose" rows="6" class="form-control" id="purpose" placeholder="Your Purpse" required=""></textarea>
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
                       <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                      <!-- <button type="submit" id="form-submit" class="filled-button">Send Message</button> -->
                     </fieldset>
                   </div>
                 </div>
@@ -163,90 +121,38 @@ https://templatemo.com/tm-546-sixteen-clothing
             </div>
           </div>
           <div class="col-md-4">
-            <ul class="accordion">
-              <li>
-                  <a>Accordion Title One</a>
-                  <div class="content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.<br><br>Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti elite.</p>
-                  </div>
-              </li>
-              <li>
-                  <a>Second Title Here</a>
-                  <div class="content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.<br><br>Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti elite.</p>
-                  </div>
-              </li>
-              <li>
-                  <a>Accordion Title Three</a>
-                  <div class="content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.<br><br>Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti elite.</p>
-                  </div>
-              </li>
-              <li>
-                  <a>Fourth Accordion Title</a>
-                  <div class="content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.<br><br>Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti elite.</p>
-                  </div>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="happy-clients">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Our Happy Customers</h2>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="owl-clients owl-carousel">
-              <div class="client-item">
-                <img src="assets/images/client-01.png" alt="1">
-              </div>
-              
-              <div class="client-item">
-                <img src="assets/images/client-01.png" alt="2">
-              </div>
-              
-              <div class="client-item">
-                <img src="assets/images/client-01.png" alt="3">
-              </div>
-              
-              <div class="client-item">
-                <img src="assets/images/client-01.png" alt="4">
-              </div>
-              
-              <div class="client-item">
-                <img src="assets/images/client-01.png" alt="5">
-              </div>
-              
-              <div class="client-item">
-                <img src="assets/images/client-01.png" alt="6">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <br><br>
 
     
-    <footer>
+    <footer style="background-color: #163d64; max-height: 80vh;" >
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="inner-content">
-              <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
-            
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-            </div>
+          <div>
+              <br>
+              <h1 style="text-align: center; color: white;">Contact Us:</h1>
           </div>
-        </div>
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12" style="color:white!important;">
+                          Information<br>
+                          <ul class="my-3">
+                            <li class="contact-us-list"><a href="tel:8839850390" style="color: white;"><i class="fa fa-phone"></i>   (+91) 8839850390</a> </li>
+                            <li class="contact-us-list"><a href="tel:9873747159" style="color: white;"><i class="fa fa-phone"></i>  (+91) 9873747159</a> </li>
+                            <li class="contact-us-list"><i class="fa fa-envelope-square"></i><a href="mailto:healthequate@gmail.com" style="color: white;">  healthequate@gmail.com</a></li>
+                            <li class="contact-us-list"><i class="fa fa-whatsapp"></i><a href="https://wa.me/9873747159" style="color: white;">  whatsapp</a></li>
+                            <li class="contact-us-list"><i class="fa fa-facebook fa-lg" style="color: white;"><a href="https://www.facebook.com/healthequate/" style="color: white;">  facebook.com/healthequate/</a></i></li>
+                            <li class="contact-us-list"><i class="fa fa-linkedin fa-lg" style="color: white;"><a href="https://www.linkedin.com/in/dr-neha-gupta-09226a10a/" style="color: white;">  LinkedIn</a></i></li>
+                            <li class="contact-us-list"><i class="fa fa-instagram fa-lg" style="color: white;"><a href="https://www.instagram.com/healthequate/" style="color: white;">  Instagram</a></i></li>
+                          </ul>
+              </div>
+              <br>
+              <br>
       </div>
-    </footer>
+      <br>
+      <br>
+  </footer>
 
 
     <!-- Bootstrap core JavaScript -->
@@ -261,6 +167,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <script src="assets/js/isotope.js"></script>
     <script src="assets/js/accordions.js"></script>
 
+    
 
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
@@ -273,6 +180,9 @@ https://templatemo.com/tm-546-sixteen-clothing
       }
     </script>
 
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="index.js"></script>
 
   </body>
 
