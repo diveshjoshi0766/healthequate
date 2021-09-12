@@ -18,6 +18,9 @@ var firebaseConfig = {
     const submitForm = async (e) => {
         e.preventDefault();
 
+        document.getElementById('submit-button').disabled = true;
+        document.getElementById('submit-button').innerText = "Wait..."
+
         var name = getInputVal('name')
         var occupation = getInputVal('occupation');
         var age = getInputVal('age');
@@ -48,6 +51,8 @@ var firebaseConfig = {
           axios.post('https://dr-neha-presonal-emial.herokuapp.com/api/send', {name: name, occupation: occupation,age: age, mobile: mobile, gender: gender ,email: "healthequate@gmail.com",chiefComplaint: chiefComplaint, dateOfInjury: dateOfInjury, dateOfSurgery: dateOfSurgery, descInjury: descInjury, historyOfThreapy: historyOfThreapy, conditionAfterThreapy: conditionAfterThreapy, presentSymptoms: presentSymptoms, numberBestCorrespondsToPainBest: numberBestCorrespondsToPainBest, numberBestCorrespondsToPainWorse: numberBestCorrespondsToPainWorse, descMakesConditionBetter: descMakesConditionBetter, descMakesConditionWorse: descMakesConditionWorse, prevMedicalIntervention: prevMedicalIntervention, goalsAtEndOfThreapy: goalsAtEndOfThreapy, secureMedicalInformation: secureMedicalInformation, prevSurgeries: prevSurgeries, others: others,medications: medications, allergies: allergies, purpose: ""}).then(response => {
             console.log("email sent to Dr.")
             alert("Thanks for registration will contact you in next 24 hours")
+            document.getElementById('submit-button').disabled = false;
+            document.getElementById('submit-button').innerText = "Register"
           }).catch((err) => {
             alert('mail not sent')
           })
