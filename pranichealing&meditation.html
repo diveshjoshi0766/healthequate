@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
 
-    <title>Sixteen Clothing Products</title>
+    <title>Pranic Healing</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +26,254 @@ https://templatemo.com/tm-546-sixteen-clothing
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
     <link rel="stylesheet" href="assets/css/owl.css">
+
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins" , sans-serif;
+      }
+      body{
+        min-height: 100vh;
+        width: 100%;
+        background: #ffffff;
+      }
+      footer{
+        position: relative;
+        background: #140B5C;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+      }
+      footer::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 100px;
+        height: 1px;
+        width: 100%;
+        background: #AFAFB6;
+      }
+      footer .content{
+        max-width: 1250px;
+        margin: auto;
+        padding: 30px 40px 40px 40px;
+      }
+      footer .content .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+      }
+      .content .top .logo-details{
+        color: #fff;
+        font-size: 30px;
+      }
+      .content .top .media-icons{
+        display: flex;
+      }
+      .content .top .media-icons a{
+        height: 40px;
+        width: 40px;
+        margin: 0 8px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+        font-size: 17px;
+        text-decoration: none;
+        transition: all 0.4s ease;
+      }
+      .top .media-icons a:nth-child(1){
+        background: #4267B2;
+      }
+      .top .media-icons a:nth-child(1):hover{
+        color: #4267B2;
+        background: #fff;
+      }
+      .top .media-icons a:nth-child(2){
+        background: #1DA1F2;
+      }
+      .top .media-icons a:nth-child(2):hover{
+        color: #1DA1F2;
+        background: #fff;
+      }
+      .top .media-icons a:nth-child(3){
+        background: #E1306C;
+      }
+      .top .media-icons a:nth-child(3):hover{
+        color: #E1306C;
+        background: #fff;
+      }
+      .top .media-icons a:nth-child(4){
+        background: #0077B5;
+      }
+      .top .media-icons a:nth-child(4):hover{
+        color: #0077B5;
+        background: #fff;
+      }
+      .top .media-icons a:nth-child(5){
+        background: #FF0000;
+      }
+      .top .media-icons a:nth-child(5):hover{
+        color: #FF0000;
+        background: #fff;
+      }
+      footer .content .link-boxes{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      footer .content .link-boxes .box{
+        width: calc(100% / 5 - 10px);
+      }
+      .content .link-boxes .box .link_name{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        position: relative;
+      }
+      .link-boxes .box .link_name::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        height: 2px;
+        width: 35px;
+        background: #fff;
+      }
+      .content .link-boxes .box li{
+        margin: 6px 0;
+        list-style: none;
+      }
+      .content .link-boxes .box li a{
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+        opacity: 0.8;
+        transition: all 0.4s ease
+      }
+      .content .link-boxes .box li a:hover{
+        opacity: 1;
+        text-decoration: underline;
+      }
+      .content .link-boxes .input-box{
+        margin-right: 55px;
+      }
+      .link-boxes .input-box input{
+        height: 40px;
+        width: calc(100% + 55px);
+        outline: none;
+        border: 2px solid #AFAFB6;
+        background: #140B5C;
+        border-radius: 4px;
+        padding: 0 15px;
+        font-size: 15px;
+        color: #fff;
+        margin-top: 5px;
+      }
+      .link-boxes .input-box input::placeholder{
+        color: #AFAFB6;
+        font-size: 16px;
+      }
+      .link-boxes .input-box input[type="button"]{
+        background: #fff;
+        color: #140B5C;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 4px 0;
+        opacity: 0.8;
+        cursor: pointer;
+        transition: all 0.4s ease;
+      }
+      .input-box input[type="button"]:hover{
+        opacity: 1;
+      }
+      footer .bottom-details{
+        width: 100%;
+        background: #0F0844;
+      }
+      footer .bottom-details .bottom_text{
+        max-width: 1250px;
+        margin: auto;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .bottom-details .bottom_text span,
+      .bottom-details .bottom_text a{
+        font-size: 14px;
+        font-weight: 300;
+        color: #fff;
+        opacity: 0.8;
+        text-decoration: none;
+      }
+      .bottom-details .bottom_text a:hover{
+        opacity: 1;
+        text-decoration: underline;
+      }
+      .bottom-details .bottom_text a{
+        margin-right: 10px;
+      }
+      @media (max-width: 900px) {
+        footer .content .link-boxes{
+          flex-wrap: wrap;
+        }
+        footer .content .link-boxes .input-box{
+          width: 40%;
+          margin-top: 10px;
+        }
+      }
+      @media (max-width: 700px){
+        footer{
+          position: relative;
+        }
+        .content .top .logo-details{
+          font-size: 26px;
+        }
+        .content .top .media-icons a{
+          height: 35px;
+          width: 35px;
+          font-size: 14px;
+          line-height: 35px;
+        }
+        footer .content .link-boxes .box{
+          width: calc(100% / 3 - 10px);
+        }
+        footer .content .link-boxes .input-box{
+          width: 60%;
+        }
+        .bottom-details .bottom_text span,
+        .bottom-details .bottom_text a{
+          font-size: 12px;
+        }
+      }
+      @media (max-width: 520px){
+        footer::before{
+          top: 145px;
+        }
+        footer .content .top{
+          flex-direction: column;
+        }
+        .content .top .media-icons{
+          margin-top: 16px;
+        }
+        footer .content .link-boxes .box{
+          width: calc(100% / 2 - 10px);
+        }
+        footer .content .link-boxes .input-box{
+          width: 100%;
+        }
+      }
+      
+      
+        </style>
 
 </head>
 
@@ -92,9 +340,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                             <p style="font-size: initial; text-align: justify;">Pranic healing founded by Grand Master Choa Kok Sui is an art that heals whole body through life energy.This energy is already present in our body and is commonly known as Aura. Through Pranic healing, this hidden energy comes into action that has potential to treat many problems for a human being.</p>
                             <p style="font-size: initial; text-align: justify;">Pranic healing works on this energy field surrounding human body also known as ‘Aura’ and energy centres also known as ‘chakras’. It follows simple steps –</p>
                             <ul style="list-style:circle; margin-left: 6vh;">
-                                <li style="font-size: initial; text-align: justify;">Cleansing – removing all dirty, diseased and unwanted energies from Aura and
-                                    chakras.</li>
-                                <li style="font-size: initial; text-align: justify;">Energising – transferring healthy life energy to the body.</li>
+                                <li style="font-size: initial; text-align: justify;"><p style="font-size: initial; text-align: justify;">Cleansing – removing all dirty, diseased and unwanted energies from Aura and
+                                    chakras.</p></li>
+                                <li style="font-size: initial; text-align: justify;"><p style="font-size: initial; text-align: justify;">Energising – transferring healthy life energy to the body.</p></li>
                             </ul>
                             <br>
                             <p style="font-size: initial; text-align: justify;">It utilizes Simple Nature’s law –
@@ -120,7 +368,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 
         <div class="best-features" style="background-color: white;">
             <div class="container">
-              <div class="row">
+              <div class="row" style="padding-bottom: 0px;">
                 <div class="col-md-6">
                   <div class="right-image">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/9VdjOyjb27A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -143,14 +391,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                     <h3 style="text-align: center;" class="my-3">Benefits of Pranic Healing</h3>
                     <br>
                     <p style="font-size: initial; text-align: justify;"><b>Pranic healing has tremendous benefits –</b><br>
-                    <ul style="list-style:circle;">
-                        <li>It can heal all kind of ailments related to heart, muscle, bone, organ, nervous system, etc.</li>
-                        <li>It can heal any psychological ailment like stress, anger, frustration, depression etc.</li>
-                        <li>It can help in resolving relationship issues.</li>
-                        <li>It strengthens body immunity, revitalize physical body and can also help in regeneration of organ.</li>
-                        <li>It helps in refueling our body with inner peace, happiness, love and literally rejuvenates the inner being.</li>
-                        <li>To sum it up, it helps in a healthy body, relaxed mind and emotional stability.</li>
-                    </ul>
+                    <p style="font-size: initial; text-align: justify;" class="container">
+                      <ul style="list-style:circle; margin-left: 6vh;">
+                          <li><p style="font-size: initial; text-align: justify; margin-bottom: 5px;">It can heal all kind of ailments related to heart, muscle, bone, organ, nervous system, etc.</p></li>
+                          <li><p style="font-size: initial; text-align: justify; margin-bottom: 5px;">It can heal any psychological ailment like stress, anger, frustration, depression etc.</p></li>
+                          <li><p style="font-size: initial; text-align: justify; margin-bottom: 5px;">It can help in resolving relationship issues.</p></li>
+                          <li><p style="font-size: initial; text-align: justify; margin-bottom: 5px;">It strengthens body immunity, revitalize physical body and can also help in regeneration of organ.</p></li>
+                          <li><p style="font-size: initial; text-align: justify; margin-bottom: 5px;">It helps in refueling our body with inner peace, happiness, love and literally rejuvenates the inner being.</p></li>
+                          <li><p style="font-size: initial; text-align: justify; margin-bottom: 5px;">To sum it up, it helps in a healthy body, relaxed mind and emotional stability.</p></li>
+                      </ul>
+                    </p>    
                   </div>
                 </div>
               </div>
@@ -163,10 +413,12 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <p style="font-size: initial; text-align: justify;">Healing sessions that can be taken in person or distantly. We provide online healing sessions for any kind of health issue, psychological issue or relationship issue.<br>
                 It has given miraculous results especially in case of emotional or mental problems.
                 </p>
+                <br>
                 <p>Call +91 9873747159,+91 9354077962 to book a session with us or click below</p>
+                <br>
                 <div class="row">
                     <div class="col-md-3"><button class="btn" style="text-decoration:none; color: #252424;"><a class="nav-link" href="knowMore.html" style="text-decoration:none; color: #252424; padding: 0px;">Know more</a></button></div>
-                    <div class="col-md-3"><button class="btn"><a class="nav-link" href="contact.html" style="text-decoration:none; color: #252424; padding: 0px;">Contact Us</a></button></div>
+                    <div class="col-md-3" style="margin-top: 1vh;"><button class="btn"><a class="nav-link" href="contact.html" style="text-decoration:none; color: #252424; padding: 0px;">Contact Us</a></button></div>
                   </div>
                   <br>
                 </div>
@@ -217,14 +469,14 @@ https://templatemo.com/tm-546-sixteen-clothing
                         <br>
                         <br>
                         <h4>WHY SHOULD WE MEDITATE ?</h4>
-                        <ul style="list-style:circle; padding-left: 8vh;" >
-                            <li>Raises our consciousness</li>
-                            <li>Flushes out all the unwanted thoughts and emotions thereby helping us achieve a sense of balance in life.</li>
-                            <li>Helps us attract a happy, peaceful and healthy life.</li>
-                            <li>Better management of physical ailments like clinical depression, sleep disorders, headache, diabetes, high blood pressure etc.</li>
-                            <li>Improved work- life balance.</li>
-                            <li>Strengthens immunity</li>
-                            <li>Greater empathy for yourself and others</li>
+                        <ul style="list-style:circle; padding-left: 3vh;" >
+                            <li><p style="font-size: initial; text-align: justify; margin-bottom: 5px;">Raises our consciousness</p></li>
+                            <li><p style="font-size: initial; text-align: justify; margin-bottom: 5px;">Flushes out all the unwanted thoughts and emotions thereby helping us achieve a sense of balance in life.</p></li>
+                            <li><p style="font-size: initial; text-align: justify; margin-bottom: 5px;">Helps us attract a happy, peaceful and healthy life.</p></li>
+                            <li><p style="font-size: initial; text-align: justify; margin-bottom: 5px;">Better management of physical ailments like clinical depression, sleep disorders, headache, diabetes, high blood pressure etc.</p></li>
+                            <li><p style="font-size: initial; text-align: justify; margin-bottom: 5px;">Improved work- life balance.</p></li>
+                            <li><p style="font-size: initial; text-align: justify; margin-bottom: 5px;">Strengthens immunity</p></li>
+                            <li><p style="font-size: initial; text-align: justify; margin-bottom: 5px;">Greater empathy for yourself and others</p></li>
                         </ul>
                         </p>
                     </div>
@@ -238,31 +490,46 @@ https://templatemo.com/tm-546-sixteen-clothing
 
 
 
-        <footer style="background-color: #163d64; max-height: 80vh;" >
-            <div class="container">
-                <div>
-                    <br>
-                    <h1 style="text-align: center; color: white;">Contact Us:</h1>
+            <footer>
+              <div class="content">
+                <div class="top">
+                  <div class="media-icons">
+                    <a href="https://www.facebook.com/healthequate/"><i class="fa fa-facebook" ></i></a>
+                    <a href="tel:8839850390"><i class="fa fa-phone" ></i></a>
+                    <!-- <a href="tel:9873747159"><i class="fa fa-phone" style="position: relative; left: -9px; top: -12px;"></i></a> -->
+                    <a href="https://www.instagram.com/healthequate/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dr-neha-gupta-09226a10a/"><i class="fa fa-linkedin" ></i></a>
+                    <a href="https://wa.me/919873747159"><i class="fa fa-whatsapp" ></i></a>
+                  </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12" style="color:white!important;">
-                                Information<br>
-                                <ul class="my-3">
-                                  <li class="contact-us-list"><a href="tel:8839850390" style="color: white;"><i class="fa fa-phone"></i>   (+91) 8839850390</a> </li>
-                                  <li class="contact-us-list"><a href="tel:9873747159" style="color: white;"><i class="fa fa-phone"></i>  (+91) 9873747159</a> </li>
-                                  <li class="contact-us-list"><i class="fa fa-envelope-square"></i><a href="mailto:healthequate@gmail.com" style="color: white;">  healthequate@gmail.com</a></li>
-                                  <li class="contact-us-list"><i class="fa fa-whatsapp"></i><a href="https://wa.me/9873747159" style="color: white;">  whatsapp</a></li>
-                                  <li class="contact-us-list"><i class="fa fa-facebook fa-lg" style="color: white;"><a href="https://www.facebook.com/healthequate/" style="color: white;">  facebook.com/healthequate/</a></i></li>
-                                  <li class="contact-us-list"><i class="fa fa-linkedin fa-lg" style="color: white;"><a href="https://www.linkedin.com/in/dr-neha-gupta-09226a10a/" style="color: white;">  LinkedIn</a></i></li>
-                                  <li class="contact-us-list"><i class="fa fa-instagram fa-lg" style="color: white;"><a href="https://www.instagram.com/healthequate/" style="color: white;">  Instagram</a></i></li>
-                                </ul>
-                    </div>
-                    <br>
-                    <br>
-            </div>
-            <br>
-            <br>
-        </footer>
+                <div class="link-boxes">
+                  <ul class="box">
+                    <li class="link_name"><a href="index.html" style="color: white; font-size: 3vh;">Home</a></li>
+                  </ul>
+                  <ul class="box">
+                    <li class="link_name"><a href="services.html" style="color: white; font-size: 3vh;">Services</a></li>
+                  </ul>
+                  <ul class="box">
+                    <li class="link_name"><a href="gallery.html" style="color: white; font-size: 3vh;">Gallery</a></li>
+                  </ul>
+                  <ul class="box">
+                    <li class="link_name"><a href="Registration.html" style="color: white; font-size: 3vh;">Regsitraion</a></li>
+                  </ul>
+                  <ul class="box">
+                    <li class="link_name"><a href="contact.html" style="color: white; font-size: 3vh;">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bottom-details">
+                <div class="bottom_text">
+                  <span class="copyright_text">Copyright © 2021 </a>All rights reserved</span>
+                  <span class="policy_terms">
+                    <a href="PrivacyPolicy.html">Privacy policy</a>
+                    <a href="TermsAndConditions.html">Terms & condition</a>
+                  </span>
+                </div>
+              </div>
+            </footer>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -287,6 +554,7 @@ https://templatemo.com/tm-546-sixteen-clothing
         }
     </script>
 
+    
 
 </body>
 

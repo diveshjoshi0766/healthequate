@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/lightbox.min.css">
     <script src="./assets/js/lightbox-plus-jquery.min.js"></script>
 
-    <title>Gallery</title>
+    <title>Sixteen Clothing - About Page</title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -315,6 +315,109 @@ html, body {
   
     </style>
 
+
+<!-- card css -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #f8f9fa; */
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 100px 20px;
+    padding-top: 200px;
+}
+.title{
+    margin-bottom: 70px;
+}
+.title h3{
+    position: relative;
+    font-size: 45px;
+    font-weight: 900;
+}
+.title h3 .bg{
+    position: absolute;
+    left: -6px;
+    top: 0px;
+    color: transparent;
+    font-size: 150px;
+    font-weight: 900;
+    opacity: .1;
+    line-height: 0;
+    -webkit-text-stroke: 1px #000;
+    -webkit-user-select: none;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;   
+}
+.card{
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+.card img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.card-body{
+    background-color: #fff;
+    padding: 20px;
+}
+.card-body .text-date{
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+    line-height: 1.7;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #999;
+    margin-bottom: 20px;
+}
+.card-body .text{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container{
+        padding: 50px 20px;
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .container{
+        padding: 30px 20px;
+    }
+    .title{
+        margin-bottom: 30px;
+    }
+    .title h3 .bg{
+        display: none;
+    }
+}
+</style>
+
   </head>
 
   <body>
@@ -328,7 +431,7 @@ html, body {
   
     <header class="">
       <nav class="navbar navbar-expand-lg">
-          <div class="container">
+          <div class="container" style="padding-top: 0px;">
               <a class="navbar-brand" href="index.html" style="z-index: 200;">
                   <h2>Health<em>Equate</em></h2>
               </a>
@@ -362,14 +465,7 @@ html, body {
           </div>
       </nav>
   </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
+    <br>  
 
     <!-- <div class="container">
     <div class="row" style="height: 18vh; text-align: center; font-size: 6vh; opacity: 0.5;">

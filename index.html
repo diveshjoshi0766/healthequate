@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Sixteen Clothing HTML Template</title>
+    <title>Health Eqaute</title>
     <style>
         .first-page-h2{
             font-family: 'minerva-modern'; 
@@ -253,7 +253,7 @@
 .fa:hover {
     opacity: 0.7;
 }
-
+/* 
 .fa-facebook {
   background: #3B5998;
   color: white;
@@ -297,7 +297,7 @@
   background-color: rgb(6, 206, 6);
   color: white;
   border-radius: 50%;
-}
+} */
 
 .list-inside-footer{
   display: flex; justify-content: space-evenly; color: white;
@@ -317,16 +317,257 @@
         }
 
   </style>
+<!-- footer -->
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #EEECEB;
+}
+footer{
+  position: relative;
+  background: #140B5C;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+footer::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+  background: #AFAFB6;
+}
+footer .content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .content .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.content .top .logo-details{
+  color: #fff;
+  font-size: 30px;
+}
+.content .top .media-icons{
+  display: flex;
+}
+.content .top .media-icons a{
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.top .media-icons a:nth-child(1){
+  background: #4267B2;
+}
+.top .media-icons a:nth-child(1):hover{
+  color: #4267B2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(2){
+  background: #1DA1F2;
+}
+.top .media-icons a:nth-child(2):hover{
+  color: #1DA1F2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(3){
+  background: #E1306C;
+}
+.top .media-icons a:nth-child(3):hover{
+  color: #E1306C;
+  background: #fff;
+}
+.top .media-icons a:nth-child(4){
+  background: #0077B5;
+}
+.top .media-icons a:nth-child(4):hover{
+  color: #0077B5;
+  background: #fff;
+}
+.top .media-icons a:nth-child(5){
+  background: #FF0000;
+}
+.top .media-icons a:nth-child(5):hover{
+  color: #FF0000;
+  background: #fff;
+}
+footer .content .link-boxes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .link-boxes .box{
+  width: calc(100% / 5 - 10px);
+}
+.content .link-boxes .box .link_name{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+.link-boxes .box .link_name::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+.content .link-boxes .box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease
+}
+.content .link-boxes .box li a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box{
+  margin-right: 55px;
+}
+.link-boxes .input-box input{
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: #140B5C;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder{
+  color: #AFAFB6;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"]{
+  background: #fff;
+  color: #140B5C;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover{
+  opacity: 1;
+}
+footer .bottom-details{
+  width: 100%;
+  background: #0F0844;
+}
+footer .bottom-details .bottom_text{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  footer .content .link-boxes{
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+  .content .top .logo-details{
+    font-size: 26px;
+  }
+  .content .top .media-icons a{
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 3 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px){
+  footer::before{
+    top: 145px;
+  }
+  footer .content .top{
+    flex-direction: column;
+  }
+  .content .top .media-icons{
+    margin-top: 16px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 2 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 100%;
+  }
+}
+
+
+  </style>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<!--
-
-TemplateMo 546 Sixteen Clothing
-
-https://templatemo.com/tm-546-sixteen-clothing
-
--->
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
@@ -388,8 +629,8 @@ https://templatemo.com/tm-546-sixteen-clothing
   <button class="open-button" onclick="openForm()" style="z-index: 100;">Connect Us</button>
 
 <div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-
+  <form action="/action_page.php" class="form-container media-icons" style="border-radius: 2vh;">
+    <!-- <a href="#"><i class="fa fa-facebook" style="position: relative; left: -7px; top: -11px;"></i></a>
     <a href="https://www.facebook.com/healthequate/" class="fa fa-facebook"></a>
     <a href="mailto:healthequate@gmail.com" class="fa fa-google"></a>
     <a href="https://www.linkedin.com/in/dr-neha-gupta-09226a10a/" class="fa fa-linkedin"></a>
@@ -397,18 +638,25 @@ https://templatemo.com/tm-546-sixteen-clothing
     <a href="tel:8839850390" class="fa fa-phone"></a>
     <a href="tel:9873747159" class="fa fa-phone"></a>
     <a href="https://wa.me/919873747159" class="fa fa-whatsapp"></a>
-<!-- 
-    <li class="contact-us-list"><a href="tel:8839850390" style="color: white;"><i class="fa fa-phone"></i>   (+91) 8839850390</a> </li>
-                          <li class="contact-us-list"><a href="tel:9873747159" style="color: white;"><i class="fa fa-phone"></i>  (+91) 9873747159</a> </li>
-                          <li class="contact-us-list"><i class="fa fa-envelope-square"></i><a href="mailto:healthequate@gmail.com" style="color: white;">  healthequate@gmail.com</a></li>
-                          <li class="contact-us-list"><i class="fa fa-whatsapp"></i><a href="https://wa.me/9873747159" style="color: white;">  whatsapp</a></li>
-                          <li class="contact-us-list"><i class="fa fa-facebook fa-lg" style="color: white;"><a href="https://www.facebook.com/healthequate/" style="color: white;">  facebook.com/healthequate/</a></i></li>
-                          <li class="contact-us-list"><i class="fa fa-linkedin fa-lg" style="color: white;"><a href="https://www.linkedin.com/in/dr-neha-gupta-09226a10a/" style="color: white;">  LinkedIn</a></i></li>
-                          <li class="contact-us-list"><i class="fa fa-instagram fa-lg" style="color: white;"><a href="https://www.instagram.com/healthequate/" style="color: white;">  Instagram</a></i></li> -->
-                        
+    <a href="#"><i class="fa fa-facebook" style="position: relative; left: -7px; top: -11px;"></i></a> -->
+    
+    <div class="content">
+      <div class="top">
+        <!-- <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">Logo</span>
+        </div> -->
+        <div class="media-icons" style="flex-direction: column;">
+          <a href="https://www.facebook.com/healthequate/"><i class="fa fa-facebook" style="position: relative; left: -7px; top: -11px;"></i></a>
+          <!-- <a href="tel:8839850390"><i class="fa fa-phone" style="position: relative; left: -9px; top: -12px;"></i></a> -->
+          <a href="tel:9873818094"><i class="fa fa-phone" style="position: relative; left: -9px; top: -12px;"></i></a>
+          <a href="https://www.instagram.com/healthequate/"><i class="fa fa-instagram" style="position: relative; left: -9px; top: -12px;"></i></a>
+          <a href="https://www.linkedin.com/in/dr-neha-gupta-09226a10a/"><i class="fa fa-linkedin" style="position: relative; left: -9px; top: -12px;"></i></a>
+          <a href="https://wa.me/919354077962"><i class="fa fa-whatsapp" style="position: relative; left: -9px; top: -12px;"></i></a>
+        </div>
+      </div>
+    </div>
     <br>
-    <br>
-
     <button type="button" class="btn cancel" onclick="closeForm()"></button>
   </form>
 </div>
@@ -534,15 +782,13 @@ https://templatemo.com/tm-546-sixteen-clothing
 </div>
   </div>  
 
-
-
   <div class="services">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
           <div class="service-item">
             <div class="down-content grow"  style="border-radius: 4vh;" data-aos="fade-in">
-              <h4>Reviews</h4>
+              <h4>Reviews</h4>  
               <p style="font-weight: 500;">A big thanks to Health Equate for conducting the Happiness and well-being Workshop.
                 <br>
                 Our team has been really appreciative of this oppurtunity and is looking forwards to have more sessions.</p>
@@ -568,23 +814,49 @@ https://templatemo.com/tm-546-sixteen-clothing
       </div>
     </div>
   </div>
-
-
-  <footer style="background-color: #163d64; max-height: 100vh;" >
-    <div class="container">
-      <img src="./assets/images/Health Equate.png" class="rounded float-start image-footer" alt="..." style="max-height: 20vh; display: block; margin: auto;">
-    </div>
-    <div class="container">
-      <ul class="list-inside-footer">
-        <li><a href="index.html" style="color: white;">Home</a></li>
-        <li><a href="index.html" style="color: white;">Services</a></li>
-        <li><a href="index.html" style="color: white;">Gallery</a></li>
-        <li><a href="index.html" style="color: white;">Registration</a></li>
-        <li><a href="index.html" style="color: white;">Contact Us</a></li>
-      </ul>
-    </div>
-</footer>
 </div>
+
+<footer>
+    <div class="content">
+      <div class="top">
+        <div class="media-icons">
+          <a href="https://www.facebook.com/healthequate/"><i class="fa fa-facebook" style="position: relative; left: -7px; top: -11px;"></i></a>
+          <a href="tel:9873818094"><i class="fa fa-phone" style="position: relative; left: -9px; top: -12px;"></i></a>
+          <!-- <a href="tel:9873747159"><i class="fa fa-phone" style="position: relative; left: -9px; top: -12px;"></i></a> -->
+          <a href="https://www.instagram.com/healthequate/"><i class="fa fa-instagram" style="position: relative; left: -9px; top: -12px;"></i></a>
+          <a href="https://www.linkedin.com/in/dr-neha-gupta-09226a10a/"><i class="fa fa-linkedin" style="position: relative; left: -9px; top: -12px;"></i></a>
+          <a href="https://wa.me/919354077962"><i class="fa fa-whatsapp" style="position: relative; left: -9px; top: -12px;"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name"><a href="index.html" style="color: white; font-size: 3vh;">Home</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name"><a href="services.html" style="color: white; font-size: 3vh;">Services</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name"><a href="gallery.html" style="color: white; font-size: 3vh;">Gallery</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name"><a href="Registration.html" style="color: white; font-size: 3vh;">Regsitraion</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name"><a href="contact.html" style="color: white; font-size: 3vh;">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2021 </a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="PrivacyPolicy.html">Privacy policy</a>
+          <a href="TermsAndConditions.html">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
