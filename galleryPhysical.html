@@ -316,135 +316,111 @@ html, body {
     </style>
 
 
+<!-- card css -->
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Font */
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
 
-/* Design */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #f8f9fa; */
 }
 
-html {
-  background-color: #ecf9ff;
+.container{
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 100px 20px;
+    padding-top: 200px;
+}
+.title{
+    margin-bottom: 70px;
+}
+.title h3{
+    position: relative;
+    font-size: 45px;
+    font-weight: 900;
+}
+.title h3 .bg{
+    position: absolute;
+    left: -6px;
+    top: 0px;
+    color: transparent;
+    font-size: 150px;
+    font-weight: 900;
+    opacity: .1;
+    line-height: 0;
+    -webkit-text-stroke: 1px #000;
+    -webkit-user-select: none;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;   
+}
+.card{
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+.card img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.card-body{
+    background-color: #fff;
+    padding: 20px;
+}
+.card-body .text-date{
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+    line-height: 1.7;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #999;
+    margin-bottom: 20px;
+}
+.card-body .text{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-body {
-  color: white;
-  background: white;
-  font-family: 'Quicksand', serif;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 1rem;
+@media screen and (max-width: 900px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container{
+        padding: 50px 20px;
+        padding-top: 80px;
+    }
 }
 
-.main{
-  max-width: 1200px;
-  margin: 0 auto;
+@media screen and (max-width: 600px) {
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .container{
+        padding: 30px 20px;
+    }
+    .title{
+        margin-bottom: 30px;
+    }
+    .title h3 .bg{
+        display: none;
+    }
 }
-
-h1 {
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.btn {
-  color: #ffffff;
-  padding: 0.8rem;
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  font-weight: 400;
-  display: block;
-  width: 100%;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: transparent;
-}
-
-.btn:hover {
-  background-color: rgba(255, 255, 255, 0.12);
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.cards_item {
-  display: flex;
-  padding: 1rem;
-}
-
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
-
-.card {
-  background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.card_content {
-  padding: 1rem;
-  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
-}
-
-.card_title {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  margin: 0px;
-}
-
-.card_text {
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;    
-  font-weight: 400;
-}
-.made_by{
-  font-weight: 400;
-  font-size: 13px;
-  margin-top: 35px;
-  text-align: center;
-}
-
 </style>
-
 
   </head>
 
-  <body style="padding: 0px;">
+  <body>
     <div id="preloader">
         <div class="jumper">
             <div></div>
@@ -490,40 +466,56 @@ img {
       </nav>
   </header>
     <br>  
-    <br>  
-    <br>  
-    <br>  
-    <br> 
 
-    <div class="main">
-      <h1>Responsive Card Grid Layout</h1>
-      <ul class="cards">
-        <li class="cards_item">
-          <div class="card">
-            <div class="card_image"><img src="/assets/images/gal-8.jpeg"></div>
-            <div class="card_content">
-              <h2 class="card_title">Social Work</h2>
-              <p class="card_text">Click on View More explore galimpus of our Social Work</p>
-              <a href="GallerySessions.html"><button class="btn card_btn">View More</button></a>
-            </div>
-          </div>
-        </li>
-        <li class="cards_item">
-          <div class="card">
-            <div class="card_image"><img src="/assets/images/gal-10.jpeg"></div>
-            <div class="card_content">
-              <h2 class="card_title">Physical Threapy Sessions</h2>
-              <p class="card_text">Click on View More explore galimpus of our sessions</p>
-              <a href="galleryPhysical.html"><button class="btn card_btn">View More</button></a>
-            </div>
-          </div>
-        </li>
-        
-      </ul>
-    </div>
+
     
-    <h3 class="made_by">Made with ♡</h3>
 
+    <div class="container">
+      
+      <a href="./assets/images/gal-1.jpeg" data-lightbox="homePortfolio" class="vertical">
+        <img src="./assets/images/gal-1.jpeg"/>
+      </a>
+      
+      <a href="./assets/images/gal-2.jpeg" data-lightbox="homePortfolio" class="horizontal">
+        <img src="./assets/images/gal-2.jpeg"/>
+      </a>
+      
+      <a href="./assets/images/gal-3.jpeg" data-lightbox="homePortfolio">
+        <img src="./assets/images/gal-3.jpeg"/>
+      </a>
+      
+      <a href="./assets/images/gal-4.jpeg" data-lightbox="homePortfolio">
+        <img src="./assets/images/gal-4.jpeg"/>
+      </a>
+      
+      <a href="./assets/images/gal-5.jpeg" data-lightbox="homePortfolio" class="big">
+        <img src="./assets/images/gal-5.jpeg"/>
+      </a>
+      
+      <a href="./assets/images/gal-6.jpeg" data-lightbox="homePortfolio">
+        <img src="./assets/images/gal-6.jpeg"/>
+      </a>
+      
+      <a href="./assets/images/gal-7.jpeg" data-lightbox="homePortfolio" class="big">
+        <img src="./assets/images/gal-7.jpeg"/>
+      </a>
+      
+      <a href="./assets/images/gal-8.jpeg" data-lightbox="homePortfolio">
+        <img src="./assets/images/gal-8.jpeg"/>
+      </a>
+      
+      <a href="./assets/images/gal-9.jpeg" data-lightbox="homePortfolio" class="big">
+        <img src="./assets/images/gal-9.jpeg"/>
+      </a>
+      
+      <a href="./assets/images/gal-10.jpeg" data-lightbox="homePortfolio">
+        <img src="./assets/images/gal-10.jpeg"/>
+      </a>
+      
+      <a href="./assets/images/gal-11.jpeg" data-lightbox="homePortfolio" class="big">
+        <img src="./assets/images/gal-11.jpeg"/>
+      </a>
+    </div>
     <br>
     <br>
     <footer>
