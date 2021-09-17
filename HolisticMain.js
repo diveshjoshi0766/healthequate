@@ -29,7 +29,7 @@ var firebaseConfig = {
 
         await axios.post('https://nodemailer-dr-neha.herokuapp.com/api/send', {email: email}).then(response => {
           console.log("Email sent")
-          axios.post('https://dr-neha-presonal-emial.herokuapp.com/api/send', {name: name, occupation: "",age: age, mobile: mobile, gender: gender ,email: "healthequate@gmail.com",chiefComplaint: "", dateOfInjury: "", dateOfSurgery: "", descInjury: "", historyOfThreapy: "", conditionAfterThreapy: "", presentSymptoms: "", numberBestCorrespondsToPainBest: "", numberBestCorrespondsToPainWorse: "", descMakesConditionBetter: "", descMakesConditionWorse: "", prevMedicalIntervention: "", goalsAtEndOfThreapy: "", secureMedicalInformation: "", prevSurgeries: "", others: "",medications: "", allergies: "", purpose: purpose}).then(response => {
+          axios.post('https://dr-neha-presonal-emial.herokuapp.com/api/send', {name: name, occupation: "",age: age, mobile: mobile, gender: gender ,email: "healthequate@gmail.com", regEmail: email, chiefComplaint: "", dateOfInjury: "", dateOfSurgery: "", descInjury: "", historyOfThreapy: "", conditionAfterThreapy: "", presentSymptoms: "", numberBestCorrespondsToPainBest: "", numberBestCorrespondsToPainWorse: "", descMakesConditionBetter: "", descMakesConditionWorse: "", prevMedicalIntervention: "", goalsAtEndOfThreapy: "", secureMedicalInformation: "", prevSurgeries: "", others: "",medications: "", allergies: "", purpose: purpose}).then(response => {
             console.log("email sent to Dr.")
             alert("Thanks for registration will contact you in next 24 hours")
             document.getElementById('submit-button').disabled = false;
